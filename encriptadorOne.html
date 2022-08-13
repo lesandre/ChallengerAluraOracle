@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  
+
   <title>EncriptaOne</title>
 
 </head>
+
 <body>
   <header>
     <h1>Challenger Alura Latam Programa Oracle One</h1>
   </header>
   <main class="container">
-   <section class="card">
-    <input type="text" name="" id="mensaje" placeholder="Ingrese su mensaje">
-    <input type="submit" value="Encriptar">
+    <section class="cards">
+      <div class="contenedor_mensaje">
+        <input type="text" name="" id="mensaje" placeholder="Ingrese Su Mensaje Secreto">
+        <div class="contenedor-errores"></div>
+      </div>
+      <input class="submit" type="submit" value="Encriptar" id="encriptar">
 
-   </section>
-   <section class="card">
-    <input type="text" name="" id="mensaje_encriptado" placeholder="este es su mensaje encriptado">
-    <input type="submit" value="Desencriptar">
-    <input type="submit" value="Copia">
-
-   </section>
+    </section>
+    <section class="cards">
+      <div class="contenedor_mensaje">
+        <input type="text" name="" id="mensaje_encriptado" placeholder="este es su mensaje encriptado">
+      </div>
+      <div class="contenedor_botones">
+        <input class="submit" type="submit" value="Desencriptar" id="desencriptar">
+        <input class="submit" type="submit" value="Copia" id="copia">
+      </div>
+    </section>
 
   </main>
-  <footer>
-    
-    Copyraight © 2022 lesandre85@Outlook.com 
+  <footer class="footer">
+
+    <h2 class="text_footer"> Copyraight © 2022 lesandre85@Outlook.com </h2>
   </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
