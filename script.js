@@ -1,11 +1,12 @@
-const inputMensaje = document.querySelector("mensaje");
-const inputResultado = document.querySelector("mensaje_encriptado");
+const inputMensaje = document.querySelector("#mensaje");
+const inputResultado = document.querySelector("#resultado");
 
-const inputEncriptar = document.querySelector("encriptar")
-const inputDesencriptar = document.querySelector("desencriptar");
-const inputCopia = document.querySelector("copia");
+const btnEncriptar = document.querySelector("#encriptar");
+const btnDesencriptar = document.querySelector("#desencriptar");
+const btnCopiar = document.querySelector("#copiar");
+const btnEscuchar = document.querySelector("#escuchar");
 
-const contenedorErrores = document.querySelector("contenedor-errores");
+const contenedorErrores = document.querySelector(".contenedor-errores");
 
 function validarMensaje () {
     // Borrar errores previos
@@ -65,9 +66,12 @@ function copiar () {
 
 
 
-inputEncriptar.onclick = encriptar;
+btnEncriptar.onclick = encriptar;
 
-inputDesencriptar.onclick = desencriptar;
+btnDesencriptar.onclick = desencriptar;
 
-inputCopiar.onclick = copiar;
+btnCopiar.onclick = copiar;
+
+
+
 

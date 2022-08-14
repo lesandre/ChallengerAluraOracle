@@ -16,26 +16,31 @@
   <header>
     <h1>Challenger Alura Latam Programa Oracle One</h1>
   </header>
-  <main class="container">
-    <section class="cards">
-      <div class="contenedor_mensaje">
-        <input type="text" name="" id="mensaje" placeholder="Ingrese Su Mensaje Secreto">
-        <div class="contenedor-errores"></div>
-      </div>
-      <input class="submit" type="submit" value="Encriptar" id="encriptar">
+  <main class="contenedor-principal">
+    <div class="tarjeta num1">
+        <div class="mensaje-contenedor">
+            <input type="text" id="mensaje" placeholder="Ingrese su mensaje secreto">
+            <div class="contenedor-errores"></div>
+        </div>
 
-    </section>
-    <section class="cards">
-      <div class="contenedor_mensaje">
-        <input type="text" name="" id="mensaje_encriptado" placeholder="este es su mensaje encriptado">
-      </div>
-      <div class="contenedor_botones">
-        <input class="submit" type="submit" value="Desencriptar" id="desencriptar">
-        <input class="submit" type="submit" value="Copia" id="copia">
-      </div>
-    </section>
+        <div class="contenedor-botones">
+            <button id="encriptar">Encriptar</button>
+            
+        </div>
+    </div>
+    <div class="tarjeta num2">
 
-  </main>
+        <div class="mensaje-contenedor">
+            <input type="text" id="resultado" placeholder="Aquí encuentra su mensaje secreto para decifrar con el boton descriptar ">
+        </div>
+
+        <div class="contenedor-botones">
+          <button id="desencriptar">Desencriptar</button>
+            <button id="copiar">Copiar</button>
+            
+        </div>
+    </div>
+</main>
   <footer class="footer">
 
     <h2 class="text_footer"> Copyraight © 2022 lesandre85@Outlook.com </h2>
